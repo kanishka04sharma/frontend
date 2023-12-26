@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+
+            
+        }
+        .pho{
+             display: flex; 
+            height: 700px;
+            width: 550px;
+            
+            
+        }
+        .phone{
+            margin-left:55px;
+        }
+        .pho1{
+            position: absolute;
+            margin-left: 225px;
+            margin-top: 20px;
+            width: 290px;
+            height: 610px;
+
+        }
+        .ins1{
+                width: ;
+        }
+        .ins12{
+            width: 200px;
+            margin: 60px;
+            margin-top: 40px;
+        }
+        .form{
+            /* display: inline-block; */
+            display: flex;
+            height: 450px;
+            margin-right: 100px ;
+            border: 1px solid rgba(128,128,128, .3);
+            width: 350px;
+        }
+        .ins1{
+            padding: 3px;    
+        }
+        .ins2{
+            margin-left:20px;  
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            height: 40px;
+        }
+        .login-btn{
+            width: 300px;
+            height: 30px;
+            font-weight: 50px;
+            background-color: rgb(1,183,255);
+            border: none;
+            border-radius: 8px;
+            margin:8px 0px;
+            color:white;
+        }
+        #or{
+            margin:  5px 0;
+        }
+        #or:before,
+        #or:after{
+            content: '--------------------------';
+
+            color: rgba(128,128,128, .7);
+            margin: 0,10px;
+        }
+
+
+        .pass{
+            margin: 50px;
+        }
+        .pass1{
+            margin: 100px ;
+        }
+        .sign-up{
+            text-align: center;
+            border: 1px solid rgba(128,128,128, .3);
+            padding: 20px;
+            margin-left: 0;
+            margin-top: 25px;
+            width: 350px; 
+            
+        }
+        /* .get-app{
+            display: flex;
+            flex-direction: column;
+            margin top:20px;
+            text-align: center;
+        } */
+        p{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .store{
+            margin-top: 20px;
+            width: 5px;
+            height: 20px;
+            align-items: center;
+            display: flex;
+        }
+        #play{
+            width: 190px;
+
+        }
+        #micro{
+            width: 135px;
+            border-radius: 8px;
+        }
+        footer{
+            background-color:#f4f6f6;
+            
+
+        }
+        .part-1{
+            display: flex;
+            justify-content: center;
+
+            
+        
+            
+
+        }
+        .part-1 a{
+            color: black;
+            word-wrap: 2px;
+        
+        }
+        .part-2{
+            margin-top:3px;
+
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pho">
+            <img src="../img/phone1.png" alt="" class="phone">
+            <img src="../img/phone.png" alt="" class="pho1">
+        </div>
+        <div class="form">
+            <form>
+            <div class="ins1">
+                <img src="../img/instagram-logo1.jpg" alt="" class="ins12">
+            </div>
+            <div class="ins2">
+            <input type="tex" class="input" placeholder="phone number, ussername, or email" required><br><br>
+            <input type="password" class="input" placeholder="password" required><br><br>
+            <button class="login-btn">Log In</button>
+            <p id="or">or</p>
+            <a href="#" class="pass">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAUBJREFUWEft2L8uREEUx/HPRqdQiEoiEhEqhc4jkIg/HeINJF4BrQfwCJSIgkfQaYloRKNARSUik6zNzXXX7LX2usnOlDNzZr7zO+fMPXMbatYaNeORgGIeaafQPOZixl2OX+Iiv0YR0AqOu9ysU/NVnGQnFwHtYqfTFbuct4ewX6v1DdAbznCdOfw4FjGS6atEoSss4LHAnSFelqsEuscsntvEVuVA37ImB1Yp0AeG8JqBGGy6b6bZt4bpqlz2guGcIqdY+uFq6GlQP+UyKHDcYrJOQHeY6GugLRyU+HyEa2Gsl0FdBmgA7zn4Pw/qMkBTuKkTUKixznsNlF2/KO1TliWFSlwxUgzF1EoK/ZtC6ziM7V4w/huXbeAo9i4LZecmRktChafPfs5mu6CK/Jry0Dx4sGu19PcjpnpSKKbQJ+RLbSWd96MVAAAAAElFTkSuQmCC"/>Login in with Facebook</a><br><br>
+            <a href="#" class="pass1">Forgot password?</a>
+            </div>
+            <div class="sign-up">
+                <p class="sign-link">Don't have an account?  <a href="#" class="sign-link">sign-up</a></p>
+             </div>
+             <div class="get-app">
+                <p>Get the app</p>
+                <div class="store">
+                    <img src="../img/google.png.crdownload" alt="" id="play">
+                    <img src="../img/micro.png" alt="" id="micro">
+                </div>
+             </div>
+            </form>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer-1">
+            <div class="part-1">
+                <a href="#">link</a>
+                <a href="#">About</a>
+                <a href="#">block</a>
+                <a href="#">jobs</a>
+                <a href="#">help</a>
+                <a href="#">API</a>
+                <a href="#">privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Locations</a>
+                <a href="#">instagram light</a>
+                <a href="#">threads</a>
+                <a href="#">Contact Uploading & Non-Users</a>
+                <a href="#">Meta Verified</a>
+            </div>
+            <div class="part-2">
+                <span>English</span>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+        
+    
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="BR Architect.css">
+    <title>BR Architect </title>
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    font-family: Verdana, sans-serif;
+     /* position: relative;  */
+    width: 100%;
+}
+
+ ul {
+    list-style: none;
+} 
+
+.logo {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+
+}
+
+.logo:hover {
+    background-color: lightgrey;
+}
+
+#b {
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   letter-spacing: 4px; 
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+     padding: 8px 16px; 
+     /* position: fixed; */
+    background: white;
+    width: 100%;
+    
+  
+} 
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    background-color: lightgrey;
+}
+
+
+#imgf {
+
+    display: block;
+    width: 100%;
+
+
+
+}
+
+#imgf:hover {
+    border: 1px solid black;
+}
+
+.img {
+    width: 98%;
+    position: relative;
+    margin: auto;
+
+
+}
+
+#Br {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 35px;
+    background-color: black;
+    opacity: 0.75;
+
+
+
+}
+
+#arch {
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 35px;
+    background-color: transparent;
+    position: absolute;
+
+}
+
+
+
+
+
+.Content {
+    width: 100%;
+    position: relative;
+    padding: 8px 16px;
+
+    display: block;
+
+
+}
+
+#Phead h3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 21px;
+    position: relative;
+
+}
+
+#Phead {
+    padding: 32px 16px;
+    width: 100%;
+
+}
+
+#Phead h3::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #d3d3d342;
+
+
+}
+
+#Proj,
+#About,
+#Contact {
+    width: 100%;
+
+
+
+}
+
+
+#Projimgs,
+#Aboutimgs,
+.imgdown {
+    position: relative;
+    left: 0px;
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+
+.gp1 img,
+.gp2 img,
+.imgdown img {
+    max-width: 100%;
+    padding: 5px 3px;
+
+}
+
+.gp2 img {
+    -webkit-filter: grayscale(70%);
+
+    filter: grayscale(70%);
+}
+    .gp1{
+    position: relative;
+
+}
+    .gp1::before{
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    left: 3px;
+    width: auto;
+    height: auto;
+    padding: 7px 15px;
+
+
+
+
+}
+
+.gp1:nth-of-type(1)::before,
+.gp1:nth-of-type(5)::before {
+    content: "Summer House";
+
+
+}
+
+.gp1:nth-of-type(2)::before,
+.gp1:nth-of-type(6)::before {
+    content: "bern House";
+
+}
+
+.gp1:nth-of-type(3)::before,
+.gp1:nth-of-type(7)::before {
+    content: "Renovated";
+}
+
+.gp1:nth-of-type(4)::before,
+.gp1:nth-of-type(8)::before {
+    content: "Brick House";
+
+}
+
+
+/*****About*****/
+#About {
+    position: relative;
+}
+
+.text {
+    position: relative;
+    left: 16px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.textblock h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.textblock h4 {
+    font-weight: normal;
+    margin: 15px 0px;
+}
+
+
+.textblock input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    margin: 15px 0px;
+    font: inherit;
+}
+
+/*****Contact*****/
+.text2 {
+    position: relative;
+    left: 16px;
+    padding-bottom: 20px;
+}
+
+#Contact input {
+    width:100%; 
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    left: 8px;
+    display: block;
+    border: 1px solid #ccc !important;
+     font-size: inherit;  
+    border-radius: 3px;
+}
+
+#Contact input:hover {
+    border: 2px solid black;
+
+
+}
+
+#Contact input:not(:first-of-type) {
+    margin: 16px 5px;
+
+
+}
+
+#Contact div input {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px 5px;
+    width: fit-content;
+    border-radius: 0px;
+}
+.imgdown {
+
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+
+
+
+
+/****footer****/
+.footer,
+.footer a {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+
+}
+
+.footer a:hover {
+    color: rgb(4, 169, 4);
+}
+
+@media (min-width: 1050px) {
+
+    .gp1,
+    .gp2 {
+        width: 23.99999%;
+    }
+}
+
+@media (min-width:603px) and (max-width:1049px) {
+
+    .gp1,
+    .gp2 {
+        width: 48%;
+    }
+
+}
+
+
+@media (max-width:602px) {
+
+    .gp1,
+    .gp2 {
+        width: 90.99999%;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <a href="#" class="logo"><span id="b">BR</span> Architects </a>
+            <nav>
+                <ul>
+                    <li><a href="#Proj">Projects</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="img">
+            <img id="imgf" src="https://www.w3schools.com/w3images/architect.jpg" alt="Arch Picture">
+            <div id="Br">BR </div>
+            <div id="arch"> Architects</div>
+        </div>
+        <div class="Content">
+            <div id="Proj">
+                <div id="Phead">
+                    <h3>Projects</h3>
+                </div>
+                <div id="Projimgs">
+                    <div class="gp1"> <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                    </div>
+                    <div class="gp1"> <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="Summer House"></div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="Brick House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="Renovated">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="Barn House">
+                    </div>
+                </div>
+            </div>
+            <div id="About">
+                <div id="Phead">
+                    <h3>About</h3>
+                </div>
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+                <div id="Aboutimgs">
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe photo">
+                        <div class="textblock">
+                            <h3>John Doe</h3>
+                            <h4> CEO & Founder</h4>
+                            <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque
+                                elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe photo">
+                        <div class="textblock">
+                            <h3>Jane Doe</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross photo">
+                        <div class="textblock">
+                            <h3>Mike Ross</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star photo">
+                        <div class="textblock">
+                            <h3>Jane Doe</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="Contact">
+                <div id="Phead">
+                    <h3>Contact</h3>
+                </div>
+
+                <div class="text2">
+                    Lets get in touch and talk about your next project.
+                </div>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Comment">
+                <div>
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="imgdown">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="Road">
+
+        </div>
+        <div class="footer">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css </a></p>
+
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+
+</html>

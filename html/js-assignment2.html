@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 700px;
+            border: 2px solid black;
+        
+        }
+        input{
+            margin: 10px;
+        }
+        body {
+      display: flex;
+       flex-wrap: wrap; 
+     
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 3px;
+      border: 2px solid black;
+    }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <input type="text" placeholder="enter your color name" id="text">
+            <input type="number" placeholder="select your div" id="number" >
+            <button id="btn">submit</button>
+
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+              <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+
+</div>
+<script>
+    document.getElementById("btn").onclick = function(){
+    let a=document.getElementById("text").value;
+     let b=document.getElementById("number").value;
+    }
+
+
+</script>
+    
+</body>
+</html>

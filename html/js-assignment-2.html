@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 700px;
+            border: 2px solid black;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="enter your color name" id="text">
+        <input type="number" placeholder="select your div" id="number">
+        <button id="btn">submit</button>
+
+        <div class="row">
+            <div class="box" onclick="changeColor(0)"></div>
+            <div class="box" onclick="changeColor(1)"></div>
+            <div class="box" onclick="changeColor(2)"></div>
+            <div class="box" onclick="changeColor(3)"></div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="changeColor(4)"></div>
+            <div class="box" onclick="changeColor(5)"></div>
+            <div class="box" onclick="changeColor(6)"></div>
+            <div class="box" onclick="changeColor(7)"></div>
+        </div>
+    </div>
+
+    <script>
+        function changeColor(index) {
+            let color = document.getElementById("text").value;
+            let selectedBox = document.getElementsByClassName("box")[index].style.backgroundColor = color;
+        
+        }
+
+        document.getElementById("btn").onclick = function () {
+            let color = document.getElementById("text").value;
+            let index = document.getElementById("number").value;
+            changeColor(index - 1); 
+        }
+    </script>
+</body>
+</html>

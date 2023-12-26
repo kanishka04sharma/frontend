@@ -1,0 +1,219 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: inline-block;
+    align: center;
+    align-items: center;
+    height: 230px;
+    position: absolute;
+        right:150px;
+        bottom:40%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0 0 20px;
+    color: #125688;
+}
+
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #125688;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+p {
+    color: #125688;
+    text-decoration: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e4560;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram</h1>
+        <form>
+            <input type="text" placeholder="Username" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button type="submit">Log In</button>
+        </form>
+        <p>Forgot your password?</p>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            font-family: 'Roboto',sans-serif;
+        }
+        .img{
+            width: 20%;
+        }
+        .phoneimg{
+        
+        position: absolute;
+        left:3%;
+        top:5%;  
+        width:20%;
+
+        }
+
+        }
+        main{
+            align-items: center;
+            margin:30%;
+         }
+         .form-div{
+            width: 45%;
+            margin: 10%;
+            height: 600px;
+            background-color: #f7f9fa;
+            padding: 20px;
+        
+         }
+         .form-div form{
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+            padding: 3vh 2vh;
+            border: 1px solid rgba(128,128,128, 0.3);
+        }
+        .form-div form .instalogo{
+            width: 200px;
+            margin: 20px 0;
+        }
+        .input{
+            width: 90%;
+            padding: .6rem;
+            border-radius: 8px;
+            border: 1px solid rgba(128,128,128, 0.3) ;
+            margin: 3px;
+
+        }
+        .login-btn{
+            width: 90%;
+            padding: 0.8rem;
+            font-weight: 50px;
+            background-color: rgb(1,183,255);
+            border: none;
+            border-radius: 8px;
+            margin:8px 0px;
+            color:white;
+        }
+        #or{
+            margin: 20px 0;
+        }
+        #or:before,
+        #or:after{
+            content: '------------------------------------------';
+            color: rgba(128,128,128, .7);
+            margin: 0,10px;
+        }
+        .fb-login{
+            font-weight: 700;
+            font-size: 95%;
+            color: rgb(85,0, 255);
+            margin-bottom: 30px;
+            margin-top: 10px;
+
+        }
+        .sign-up{
+            text-align: center;
+            border: 1px solid rgba(128,128,128, .3);
+            padding: 20px;
+            margin: 10px;
+        }
+        .get-app{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .store{
+            display: flex;
+            align-items: center;
+        }
+        #play{
+            width: 190px;
+
+        }
+        #micro{
+            width: 135px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <img src="../img/phone.png" alt="" class="img">
+    <img src="../img/phone.png" alt="" class="phoneimg">
+    <div class="form-div">
+        <form>
+            <img src="../img/instagram-logo1.jpg" alt="logo" class="instalogo">
+            <input type="tex" class="input" placeholder="phone number, ussername, or email" required>
+            <input type="password" class="input" placeholder="password" required>
+            <button class="login-btn">Log In</button>
+            <p id="or">or</p>
+            <a href="#" class="fb-login"><i class='bx bxl-facebook-square'></i>Login in with Facebook</a>
+         </form>
+         <div class="sign-up">
+            <p class="sign-link">Don't have an account?  <a href="#" class="sign-link">sign-up</a></p>
+         </div>
+         <div class="get-app">
+            <p>Get the app</p>
+            <div class="store">
+                <img src="../img/play.png" alt="" id="play">
+                <img src="../img/micro.png" alt="" id="micro">
+            </div>
+         </div>
+    </div>
+    </main>
+</body>
+</html>

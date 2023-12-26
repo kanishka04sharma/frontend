@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- <script> 
+        var id=5;
+        var id=7;
+        document.write(id);
+
+
+        let no=65;
+        no=77;
+        document.write(no)
+
+        const digit=85;
+        document.write(digit);/
+        {
+                var no=85;
+
+
+        }
+        console.log(no);
+
+        {
+            let no=55;
+
+        }
+        console.log(no);
+
+        let num_val=56;
+        console.log(num_val);
+        console.log(a=70);
+        var a;
+        console.log(b=60);
+        let b;
+
+        add()
+        function add(){
+            console.log("hello world");
+        }
+
+        console.log(b=50);
+        var b;
+
+        console.log(n);
+        var n=10;
+
+
+        {
+        console.log(name)
+        var name=50;
+
+        // this is a host variable
+        }
+
+        {
+            const a=50;
+            console.log(a);
+            // const is a local variable not a global variable
+        }
+
+    let a=20;
+    let b=70;
+    let c=85;
+    let d=55;
+    if(a>b && a>c && a>d){
+        console.log('a is grater');
+    }
+    else if (b>a && b>c && b>d){
+        console.log('b is grater');
+    }
+    else if(c>a && c>b && c>d){
+        console.log('c is grater');
+    }
+    else
+    console.log('d is grater');
+
+  var a=20;
+  a%2==0? console.log("even"):console.log("odd");
+
+let n=100;
+for(let i=0;i<n;i++){
+    console.log(i);
+}
+
+let a;
+for(let i=1; i<10;i++){
+    console.log(2*i);
+}
+
+let user;
+if(user>='a' && user<='z'){
+    console.log("alphabet");
+}
+else if(user>=0 || user<=9){
+    console.log("number");
+}
+else{
+    console.log("spacial characher")
+}
+
+     -->
+
+
+     <!-- </script> --> 
+    <!-- <input type"number" name="" id="number">
+    <button onclick="demo()">click</button>
+    <script>
+        function demo(){
+            var num=document.getElementById("number").value;
+            var isprime;
+            for(var i=2;i<=num;i++){
+               isprime=1;
+               for(var j=2;j<=i/2;j++){
+                if(i%j==0){
+                    isprime=0;
+                    break;
+                }
+               } 
+               if(isprime==1){
+                documnt.write(i+"br");
+               }
+            }
+        }
+    </script> -->
+
+    <!-- prime number -->
+<!-- <input type="number" name="" id="number">
+<button onclick="demo()">Click</button>
+
+<script>
+    function demo() {
+        var num = document.getElementById("number").value;
+        var isPrime;
+
+        for (var i = 2; i <= num; i++) {
+            isPrime = 1;
+
+            for (var j = 2; j <= i / 2; j++) {
+                if (i % j === 0) {
+                    isPrime = 0;
+                    break;
+                }
+            }
+
+            if (isPrime === 1) {
+                document.write(i + "<br>");
+            }
+        }
+    } -->
+<!-- </script> -->
+<!-- number -->
+<!-- <input type="number" name="" id="number">
+<button onclick="demo()">click</button>
+<script>
+    function demo(){
+        var n=document.getElementById("number").value;
+        var numbers;
+        for(var i=0;i<=n;i++){
+            console.log(i);
+        }
+    }
+</script> -->
+
+<!--if enyone type a to z print alphabet, write numbr print number if anybudy type spaical char -->
+<!-- <input type="text" id="character" placeholder="Enter a character">
+<button onclick="checkCharacter()">Check</button>
+<p id="result"></p>
+
+<script>
+    function checkCharacter() {
+        var character = document.getElementById("character").value;
+        var resultElement = document.getElementById("result");
+
+        if (character.length === 1) {
+            if (/[a-zA-Z]/.test(character)) {
+                resultElement.innerHTML = character + " is an alphabet.";
+            } else if (/\d/.test(character)) {
+                resultElement.innerHTML = character + " is a number.";
+            } else {
+                resultElement.innerHTML = character + " is a special character.";
+            }
+        } else {
+            resultElement.innerHTML = "Please enter a single character.";
+        }
+    }
+</script> -->
+
+
+<!-- 
+<input type="text" id="character" placeholder="Enter a character">
+<button onclick="checkCharacter()">Check</button>
+
+<script>
+    function checkCharacter() {
+        var character = document.getElementById("character").value;
+
+        if ((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')) {
+            console.log(character + " is an alphabet.");
+        } else if (character >= '0' && character <= '9') {
+            console.log(character + " is a number.");
+        } else {
+            console.log(character + " is a special character.");
+        }
+    }
+</script> -->
+
+
+
+
+
+
+</body>
+
+</html>

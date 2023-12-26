@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp-1">
+    <input type="text"id="inp-2">
+    <select name="" id="sel">
+        <option value="">None</option>
+        <option value="add">Add</option>
+        <option value="sub">sub</option>
+        <option value="mul">mul</option>
+        <option value="div">div</option>
+    </select>
+    <script>
+        document.getElementById("sel").onclick = function(){   
+        var a=Number(document.getElementById("inp-1").value);
+        var b=Number(document.getElementById("inp-2").value);
+        var c=document.getElementById("sel").value;
+
+if(c=="add"){
+    console.log(a+b);
+   }
+    else if(c=="sub"){
+    console.log(a-b);
+   }
+   else if(c=="mul")
+  {
+      console.log(a*b);
+}        
+   else if(c=="div"){
+      console.log(a/b);
+   }
+}
+
+    </script>
+</body>
+</html>

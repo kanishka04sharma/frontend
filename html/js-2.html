@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sel {
+            width: 30%;
+            padding: 5px;
+            margin-left: 20px;
+
+        }
+
+        .container {
+            align-items: center;
+            border: 3px solid black;
+            width: 500px;
+        
+            background-color: white;
+        }
+
+        .container h2 {
+            margin-left: 20px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .y {
+
+            padding: 10px;
+            border-radius: 50%;
+            margin: 15px;
+            width: 5px;
+            background-color: yellow;
+
+        }
+
+        .g {
+
+            padding: 10px;
+            border-radius: 50%;
+            margin: 15px;
+            width: 5px;
+            background-color: green;
+
+        }
+
+        .sky {
+
+            padding: 10px;
+            border-radius: 50%;
+            margin: 15px;
+            width: 5px;
+            background-color: skyblue;
+        }
+
+        .br {
+
+            padding: 10px;
+            border-radius: 50%;
+            margin: 15px;
+            width: 5px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body id="b">
+    <div class="container">
+        <h2>Select Your Doman</h2>
+        <select name="" id="sel">
+            <option value="">Make a Point</option>
+            <option value="React">React</option>
+            <option value="Django">Django</option>
+            <option value="Angular">Angular</option>
+            <option value="Aws">Aws</option>
+        </select>
+        <!-- <p id="p"></p> -->
+        <div class="main" id="main">
+
+            <div class="y" id="yellow"></div>
+            <div class="g" id="green"></div>
+            <div class="sky" id="skyblue"></div>
+            <div class="br" id="brown"></div>
+        </div>
+        <p id="p">
+        </p>
+
+        <button id="uper">upercase</button>
+        <button id="lower">lowecase</button>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+
+    </div>
+
+
+
+    <script>
+        document.getElementById("sel").onclick = function () {
+            let a = document.getElementById("sel").value;
+            if (a == "React") {
+                document.getElementById("p").innerHTML = "React JS is a JavaScript library used for building user interfaces (UIs) for single-page applications. React manages the view layer and is used for the development of both web and mobile applications";
+
+            }
+            else if (a == "Django") {
+                document.getElementById("p").innerHTML = "What is Django? Django is a high-level Python web framework that enables rapid development of secure and maintainable websites . Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel";
+            }
+            else if (a == "Angular") {
+                document.getElementById("p").innerHTML = "Angular is a platform and framework for building single-page client applications using HTML and TypeScript . Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.";
+            }
+            else if (a == "Aws") {
+                document.getElementById("p").innerHTML = "AWS is designed to allow application providers, ISVs, and vendors to quickly and securely host your applications – whether an existing application or a new SaaS-based application. You can use the AWS Management Console or well-documented web services APIs to access AWS's application hosting platform.";
+            }
+        }
+
+        document.getElementById("yellow").onclick = function () {
+
+            document.getElementById("b").style.backgroundColor = "yellow"
+
+        }
+        document.getElementById("green").onclick = function () {
+
+            document.getElementById("b").style.backgroundColor = "green"
+
+        }
+        document.getElementById("skyblue").onclick = function () {
+
+            document.getElementById("b").style.backgroundColor = "skyblue"
+
+        }
+        document.getElementById("brown").onclick = function () {
+
+            document.getElementById("b").style.backgroundColor = "brown"
+
+        }
+
+        document.getElementById("uper").onclick = function () {
+
+            document.getElementById("p").style.textTransform = "uppercase";
+
+
+        }
+        document.getElementById("lower").onclick = function () {
+            document.getElementById("p").style.textTransform = "lowercase";
+        }
+
+        let a = 16;
+        document.getElementById("plus").onclick = function () {
+            document.getElementById("p").style.fontSize = a + "px";
+            a++;
+            // console.log(a)
+        }
+
+        document.getElementById("minus").onclick = function () {
+            document.getElementById("p").style.fontSize = a + "px";
+            a--;
+            // console.log(a)
+        }
+
+    </script>
+</body>
+
+</html>

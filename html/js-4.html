@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">html</a>
+    <a href="#">css</a>
+    <a href="#">java script</a>
+    <a href="#">react</a>
+    <script>
+        let a=document.querySelectorAll("a")
+        for(let i of a){
+            i.onclick=function(event){
+                console.log(i.innerText);
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

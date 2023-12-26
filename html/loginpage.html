@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0, .6)), url("../img/netflix-background.jpg");
+  background-position: center;
+  overflow-x: hidden;
+}
+
+body::before {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 90px;
+}
+
+.header img {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-1 {
+  color: white;
+  height: 660px;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding-top: 60px;
+
+}
+
+.form-2 {
+  height: 80%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+::placeholder {
+  color: #8c8c8c;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.inputs input {
+  background-color: rgb(51, 51, 51);
+  border: none;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.buttons {
+  padding-top: 24px;
+}
+
+.buttons button {
+  width: 100%;
+  height: 40px;
+  background-color: #E50914;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.remember-me,.need-help {
+  color: #d4cbcb;
+  font-size: 14px;
+}
+
+.checkbox-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.remember-me-block {
+  height: 13px;
+}
+
+.help-block {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.help-block:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  text-decoration-style: solid;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+.sign-up:hover {
+  text-decoration: underline;
+}
+
+.importent {
+  padding-top: 15px;
+  color: #8c8c8c;
+}
+
+.learn-more {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.more-info {
+  height: 20px;
+  padding-top: 100px;
+}
+
+.new-to-netflix {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+          <a href="https://www.netflix.com/in/">
+            <img src="../img/netflix-logo.svg" alt="logo">
+          </a>
+        </header>
+  
+        <div class="form-1">
+  
+          <div class="form-2">
+  
+            <div class="title">
+              <h1>Sign In</h1>
+            </div>
+            
+            <div class="inputs">
+              <input type="text" placeholder="Email or phone number"/>
+              <input type="password" placeholder="Password"/>
+            </div>
+            
+            <div class="buttons">
+              <button class="login-button">Sign In</button>
+              
+              <div class="checkbox-block">
+                
+                <div class="remember-me-block">
+                  <input type="checkbox">
+                  <span class="remember-me">Remember me</span>
+                </div>
+                
+                <div> 
+                  <a class="help-block" href="https://www.netflix.com/in/LoginHelp">
+                    <span class="need-help">Need help?</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="more-info">
+              
+              <div class="new-to-netflix">
+                <span class="new">New to Netflix?</span>
+                <a href="https://www.netflix.com/in/" class="sign-up">Sign up now.</a>
+              </div>
+            </div>
+  
+            <div class="important">
+              <small>This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                <a href="" class="learn-more">Learn more.</a>
+              </small>
+            </div>
+            
+            
+          </div>
+        
+        </div> 
+        <footer>
+          <div class="footer-1">
+            <span>Questions?</span>
+            <span>Call <a href="" class="call">000-800-919-1694</a></span>
+              
+          </div>
+          <div class="block-2">
+            <a href="">FAQ</a>
+            <a href="">HELP center</a>
+            <a href="">terms of use</a>
+            <a href="">privacy</a>
+            <a href="">cookie preference</a>
+            <a href="">coporate Information</a>
+            
+          </div>
+        </footer> 
+
+      
+</body>
+</html>

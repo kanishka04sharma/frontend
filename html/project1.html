@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: vardana,sans-serif;
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        .logo{
+            /* display: block; */
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+
+        }
+        .logo :hover{
+            background-color: lightgrey;
+        }
+        #b{
+            font-weight: bold;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            align-items: center;
+            letter-spacing: 4px; 
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 55px;
+         }
+         header nav ul {
+    display: flex; 
+    }
+    header nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    color: black;
+}
+header nav ul li a:hover {
+    background-color: lightgrey;
+}
+#imgf {
+width: 100%;
+}
+#imgf:hover {
+    border: 1px solid black;
+}
+.img {
+    width: 98%;
+    margin: auto;
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <a href="#" class="logo"><span id="b">BR</span> Architects </a>
+            <nav>
+                <ul>
+                    <li><a href="#Proj">Projects</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="img">
+            <img id="imgf" src="https://www.w3schools.com/w3images/architect.jpg" alt="Arch Picture">
+            <div id="Br">BR </div>
+            <div id="arch"> Architects</div>
+        </div>
+        <div class="Content">
+            <div id="Proj">
+                <div id="Phead">
+                    <h3>Projects</h3>
+                </div>
+                <div id="Projimgs">
+                    <div class="gp1"> <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                    </div>
+                    <div class="gp1"> <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="Summer House"></div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="Brick House">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="Renovated">
+                    </div>
+                    <div class="gp1"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="Barn House">
+                    </div>
+                </div>
+            </div>
+            <div id="About">
+                <div id="Phead">
+                    <h3>About</h3>
+                </div>
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+                <div id="Aboutimgs">
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe photo">
+                        <div class="textblock">
+                            <h3>John Doe</h3>
+                            <h4> CEO & Founder</h4>
+                            <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque
+                                elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe photo">
+                        <div class="textblock">
+                            <h3>Jane Doe</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross photo">
+                        <div class="textblock">
+                            <h3>Mike Ross</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+                    <div class="gp2">
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star photo">
+                        <div class="textblock">
+                            <h3>Jane Doe</h3>
+                            <h4>Architect</h4>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                                pellentesque elementum.
+                            </p>
+                            <input type="submit" value="Contact">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="Contact">
+                <div id="Phead">
+                    <h3>Contact</h3>
+                </div>
+
+                <div class="text2">
+                    Lets get in touch and talk about your next project.
+                </div>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Comment">
+                <div>
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="imgdown">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="Road">
+
+        </div>
+        <div class="footer">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css </a></p>
+
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+
+</html>
+</body>
+</html>
