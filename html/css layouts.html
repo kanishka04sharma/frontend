@@ -2,34 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * { 
+            box-sizing: border-box; 
             margin: 0px;
             padding: 0px;
-            box-sizing: border-box;
         }
-        .container{ 
+        .logo{
+            background-color: lightgrey;
+            padding: 20px;
+
+        }
+        .box{
+            background-image: url("../img/fg.jpg");
             width: 100%;
-            height: 50px;
-            background-color: lightgoldenrodyellow;     
-            border: 1px solid black;
+            height: 800px;
+            position: relative;
         }
+        .box-2{
+            
+            position: absolute;
+            top: 20%;
+            left: 17%;
+        }
+        .box h2{
+            font-size: 60px;
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box p{
+            color: white;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        #box-3 {
+             text-align: center;
+             
+        }
+        .box12{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        button{
+        border-radius: 30px;
+        text-align: center;
+        width: 170px;
+        padding: 18px;
+        font-weight: bold;
+        cursor: pointer;
+
+           
+
+           
+        }
+
+
+
     </style>
 </head>
-<body>
-     <div class="container"> 
-        <div class="layout1"></div>
-        <div class="layout2"></div>
-        <div class="layout3">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <div class="layout4"></div>
-    </div>
 
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../img/logo-w.png" alt="">
+        </div>
+        <div class="box">
+                <div class="box-2">
+                    <h2>We love to see you soon on the mat!</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br>
+                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<br>
+                          voluptate velit </p>
+                        <p id="box-3">image from <a href="#">flipcard</a></p>
+                    <div class="box12">
+                        <button>read more</button>
+                    </div>
+                </div>
+        </div>
+    </div>
 </body>
 </html>

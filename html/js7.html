@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1></h1>
+    <script>
+      let a=20;                  
+      document.querySelector("h1").innerHTML =  `my age is ${a}`;
+    </script> -->
+
+    
+    <input type="range" id="slider"  min="0" max="100">
+    <h1>this is my first event</h1>
+    <script>
+        document.getElementById("slider").oninput = function(){
+           var slid = document.getElementById("slider").style.fontSize=slider.value;
+
+        }
+    </script>
+</body>
+</html>
