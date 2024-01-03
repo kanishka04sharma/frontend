@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
+        
         body {
             font-family: 'Arial', sans-serif;
             display: flex;
@@ -12,6 +14,8 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            flex-direction: column;
+        
         }
 
         .clock {
@@ -31,9 +35,13 @@
         .separator {
             margin: 0 0.5em;
         }
+    
+
+
     </style>
 </head>
 <body>
+    <h1>Digital clock</h1>
     <div class="clock" id="clock">
         <div class="column" id="hour">00</div>
         <div class="separator">:</div>
@@ -41,10 +49,26 @@
         <div class="separator">:</div>
         <div class="column" id="seconds">00</div>
     </div>
-        <script>
-            const d= new date();
-            document.getElementById("clock").innerHTML=d;
-        </script>
 
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); 
+            document.getElementById("hour").innerHTML=h;
+            var m = date.getMinutes();
+            document.getElementById("minutes").innerHTML=m;
+            var s = date.getSeconds();
+            document.getElementById("seconds").innerHTML=s;
+            console.log(h);
+            console.log(m);
+            console.log(s);
+        
+        
+
+            
+
+        }
+    </script>
 </body>
 </html>

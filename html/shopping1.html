@@ -1,645 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        .container{
-            background-color: white;
-            padding: 15px;
-        }
-        .header{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .header-1 ul li{
-            list-style: none;
-            float: left;
-            margin-right: 20px;
-            font-size: 15px;
-            font-family: 'Times New Roman', Times, serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 
-        }
-        ul li a {
-            text-decoration: none;
-            color: black;
-
-        }
-        .header-3{
-            display: flex;
-            
-        }
-        .header-3 i{
-            margin: 20px;
-        }
-       
-        .collection{
-            background-image: url("../img/banner-bg.jpg");
-            height:800px;
-        }
-        .collection-1{
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-
-        }
-        .collection-2{
-            position: relative;
-            width: 100%;
-            min-height: 1px;
-            padding-right: 15px;
-           padding-left: 15px;
-           
-        }
-        .collection-3{
-            position: absolute;
-            margin-top: 22%;
-            margin-left: 50px;
-            
-        }
-        .first{
-            text-transform: uppercase;
-            color: white;
-            
-            
-
-        }
-        .second h3{
-            font-size: 50px;
-            color: white;
-
-        }
-        .second span{
-            color: #71cd14;
-            
-        
-        }
-        .second p{
-            color: white;
-            font-size: 20px;
-            margin-bottom: 40px;
-            
-            
-        
-        }
-    .main_btn{
-    display: inline-block;
-    background: #71cd14;
-    padding: 0px 32px;
-    letter-spacing: 0.25px;
-    color: #fff;
-    font-family: "Roboto",sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 44px; 
+  }
+  .late-1{
     text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-    }
-    .section{
-        padding-top: 30px
-    }
-    .container-1{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    }
-    .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
- .single-feature{
-    padding: 30px 15px;
-    text-align: center;
-    border: 1px solid #eff2f3;
-    margin-bottom: 50px;
-}  
-.single-feature a{
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-    
-}
-.single-feature p{
-    margin-top: 10px;
-    color:darkgray
-}
-.fea{
-      text-align: center;
-
-}
-.fea h2{
-    font-size: 24px;
-    color: #2a2a2a;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    
-  
-}
-
-.feature-2{
-
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-.product-1{
-  margin-left: 20px;
-
-}
-.product-1 p{
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-
-}
-.product-1 span{
-  font-size: 20px;
-}
-.product-1 del{
-  margin-left: 20px;
-  font: 500px;
-  
-    
-}
-.offer_area{
-    
-    background-image: url("../img/offer-bg.png");
     margin-top: 60px;
-    height:400px;
-    width: 100%;
-}
-.offer_area-1 {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.offer-area-2{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px
-}
- .offer-area-3{
-position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.offer_content {
-    padding: 100px 0px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-
-}
-.offer_content h3 {
-    font-size: 24px;
-    font-weight: 300;
-    color: #4a4a4a;
-    margin-bottom: 40px
+  }
+  .late-1 h2{
+    font-weight: 900;
     text-transform: uppercase;
-}
-.offer_content h2 {
-    font-size: 100px;
-    line-height: 80px;
-    color: #2a2a2a;
-    margin-bottom: 0px;
-    font-weight: 700;
-}
-.main_btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: #71cd14;
-    padding: 0px 32px;
-    letter-spacing: 0.25px;
-    color: #fff;
-    font-family: "Roboto",sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-    border: 1px solid #71cd14;
-    cursor: pointer;
-    text-transform: uppercase;
-    /* transition: all 300ms linear 0s; */
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-.new-product-1{
-      text-align: center;
+    /* text-decoration: underline;  */
+   } 
+  .late-1 p{
+    margin-top: 30px;
 
-}
-.new-1 {
-    font-size: 15px;
-    color: #2a2a2a;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 70px;
-    text-decoration: underline;
-}
-.new-1 p{
-  margin-top: 30px;
-}
+  }
+  text
 
 
+  
 
-
-
-
-.footer{
-            background-color: black;
-
-
-        }
-        .container-123{
-            display: flex;
-            justify-content: space-evenly;
-            
-            
-
-        }
-        .coll{
-            margin-top: 80px;
-            margin-bottom: 60px;
-            
-        }
-        .coll h4{
-            margin: 30px;
-            color: white;
-            font-size: 20px;
-        }
-        .coll ul li {
-            list-style:none;
-            margin: 10px;
-            
-        
-        }
-        .coll ul li a{
-            text-decoration: none;
-            color: gray;
-            font-size: 15px;
-            
-        }
-        .footer-bottom{
-            display: flex;
-            justify-content: space-evenly;
-            
-        
-        }
-        .bottom-1{
-          color: white;
-        }
-        .footer-social a {
-            margin: 10px;     
-        }
-     
-
-
-
-
-
-
-
-
-    </style>
-
+</style>
 <body>
-    <div class="container">
-        <div class="header">
-            <div>
-                <img src="../img/logo.png" alt="">
-            </div>
-            <div class="header-1">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="#">CONTACT</a></li>
-
-                </ul>
-            </div>
-            <div class="header-3">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-regular fa-user"></i></div>
-                <div><i class="fa-regular fa-heart"></i></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- second part -->
-    <div class="collection">
-        <div class="collection-1">
-            <div class="collection-2">
-                <div class="collection-3">
-                  <div class="first">
-                    <p>men collection</p>
-                  </div>
-                <div class="second">
-                    <h3><span>Show</span> Your<br>
-                        Personal <span>Style</span></h3>
-                        <p>Fowl saw dry which a above together place.</p>
-                        <a class="main_btn" href="#">View Collection</a>
-
-                </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <!--third part-->
-    <section class="section">
-        <div class="container-1">
-          <div class="row">
-            <div class="row-1">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                  <h3>Money back gurantee</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-truck"></i>
-                  <h3>Free Delivery</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-headphones"></i>
-                  <h3>Alway support</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-headphones"></i>
-                  <h3>Secure payment</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-        </div>
-    
-    </div>
-  </section> 
-
-  <!-- part 3 -->
-
-  <div class="feature">
-    <div class="feaature-1">
-        <div class="fea">
-          <h2><span>Featured product</span>
-          </h2>
-          <p>Bring called seed first of third give itself now ment</p>
-        </div>
-    </div>
-    <div class="feature-2">
-        <div class="feature-name">
-              <div class="img">
-                <img src="../img/f-p-1.jpg" alt="">
-              </div>
-            <div class="product-name">
-              <div class="product-1">
-                <p>latest men's sneaker</p>
-                <span>$25.00</span>
-                <del>$35.00</del>
-             </div>
-            </div>
-        </div>
-        <div class="feature-name">
-          <div class="img">
-            <img src="../img/f-p-2.jpg" alt="">
-          </div>
-        <div class="product-name">
-          <div class="product-1">
-            <p>red women perses</p>
-            <span>$25.00</span>
-            <del>$35.00</del>
-         </div>
-        </div>
-    </div>
-    <div class="feature-name">
-      <div class="img">
-        <img src="../img/f-p-3.jpg" alt="">
-      </div>
-    <div class="product-name">
-      <div class="product-1">
-        <p>men stylist smart watch</p>
-        <span>$25.00</span>
-        <del>$35.00</del>
-     </div>
-    </div>
-</div>
-    </div>
-        
-  </div>
-
-
-  <!-- fifth -->
-  <section class="offer_area">
-    <div class="offr-area-1">
-      <div class="offer_area-2">
-        <div class="offer-area-3">
-          <div class="offer_content">
-            <h3 class="text">all men’s collection</h3>
-            <h2 class="text-1">50% off</h2>
-            <a href="#" class="main_btn">Discover Now</a>
-            <p>Limited Time Offer</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<!-- six  -->
-<div class="new-product">
-  <div class="new-product-1">
-      <div class="new-1">
-        <h2><span>new product</span>
+  <div class="latest">
+    <div class="latestfir">
+      <div class="late-1">
+        <h2><span>latest blog</span>
+          <h3></h3>
         </h2>
         <p>Bring called seed first of third give itself now ment</p>
       </div>
-  </div>
-
-      
-      
 
     </div>
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="footer">
-    <div class="container-123">
-        <div class="coll">
-          <h4>Top Products</h4>
-          <ul>
-            <li><a href="#">Managed Website</a></li>
-            <li><a href="#">Manage Reputation</a></li>
-            <li><a href="#">Power Tools</a></li>
-            <li><a href="#">Marketing Service</a></li>
-          </ul>
+    <div class="comment-12">
+      <div class="firstcom-1">
+        <div class="firstcom-img">
+          <img src="../img/b1.jpg" alt="">
         </div>
-        <div class="coll">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Brand Assets</a></li>
-            <li><a href="#">Investor Relations</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div class="coll">
-          <h4>Features</h4>
-          <ul>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Brand Assets</a></li>
-            <li><a href="#">Investor Relations</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div class="coll">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Experts</a></li>
-            <li><a href="#">Agencies</a></li>
-          </ul>
-        </div>
-        <div class="coll">
-          <h4>Newsletter</h4>
-          <p>You can trust us. we only send promo offers,</p>
-          <div class="form">
-              <input type="email"placeholder="enter your email address">
-              <button>subscribe</button>
-            </form>
-          </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="bottom-1">
-          <p>Copyright © 2023 All rights reserved | This template is made with 
-          <i class="fa-regular fa-heart"></i> by <a href="https://colorlib.com" 
-           target="_blank">Colorlib</a></p>
+       <div class="admin">
+         <p>by  admin <span> comments</span></p>
        </div>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-behance"></i></a>
-        </div>
+       <div class="user">
+         <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+         <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
+       </div>
+       <div class="learn">learn more</div>
+      </div>
     </div>
 
-</footer>
+    <div class="firstcom-1">
+      <div class="firstcom-img">
+        <img src="../img/b1.jpg" alt="">
+      </div>
+     <div class="admin">
+       <p>by  admin <span> comments</span></p>
+     </div>
+     <div class="user">
+       <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+       <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
+     </div>
+     <div class="learn">learn more</div>
+    </div>
+  </div>
+
+
+  <div class="firstcom-1">
+    <div class="firstcom-img">
+      <img src="../img/b1.jpg" alt="">
+    </div>
+   <div class="admin">
+     <p>by  admin <span> comments</span></p>
+   </div>
+   <div class="user">
+     <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+     <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
+   </div>
+   <div class="learn">learn more</div>
+  </div>
+</div>
+
+
+    
+  </div>
+
+  
+  </div>
 </body>
 </html>
