@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let x=[10,20,30,40,50,"abhi", true,1.57];
+        // for(let i=0;i<x.length;i++){
+        //     console.log(x[i]);
+        // }
+
+        // let y=[100,52,44,78,96,63];
+        // let sum=0;
+        // for(let i of y){
+        //     sum+=i;
+        // }
+        //     console.log(sum);
+
+
+        // second max
+        let y=[100,52,44,78,96,63];
+        let max=0;
+        for(let i of y){
+         if(max<i) max=i;
+
+        }
+        // console.log(max);
+        let temp=0;
+        for(let i of y){
+            if(temp<i && i<max)
+            temp=i;
+        }
+        console.log(temp);
+    
+
+        // 
+
+
+
+        
+           
+    </script>
+</body>
+</html>

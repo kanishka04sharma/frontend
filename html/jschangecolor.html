@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            /* background-color: green; */
+            height: 100px;
+            width: 10%;
+            float: left;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 50; i++) {
+            let newDiv = document.createElement('div');
+            document.body.appendChild(newDiv);
+        }
+
+        function random(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function randomColor() {
+            return 'rgb(' + random(256) + ',' + random(256) + ',' + random(256) + ')';
+        }
+
+        let divs = document.querySelectorAll('div');
+        divs.forEach(function (div) {
+            div.onclick = function () {
+                div.style.backgroundColor = randomColor();
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body, .wrapper{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+        }
+        body{
+            background-color: rgb(70, 70, 241);
+            min-height: 100vh;
+        }
+        .wrapper{
+            width: 440px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            flex-direction: column;
+        }
+        .wrapper img{
+            max-width: 110px;
+        }
+        .wrapper h1{
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0;
+        }
+        .wrapper .content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content .column{
+            border-radius: 5px;
+            border: 1px solid #999;
+            width: 30%;
+        }
+        .column select{
+            outline: none;
+            border: none;
+            height: 40px;
+            /* width: 100%; */
+            font-size: 19px;
+        }
+        .wrapper button{
+            width: 100%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 17px 0;
+            border-radius: 5px;
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzK-33QMOob2SAGaugSmIbdXx4rhfJZZz8wA&usqp=CAU" alt="">
+        <h1>04:20:30</h1>
+        <div class="content">
+            <div class="column">
+                <select>
+                    <option value="hour">Hour</option>
+                </select> 
+            </div>
+            <div class="column">
+                <select>
+                    <option value="Minit">Minit</option>
+                </select> 
+            </div>
+            <div class="column">
+                <select>
+                    <option value="AM/PM">AM/PM</option>
+                   
+                </select> 
+            </div>
+        </div>
+        <button>Set Alerm</button>
+    </div>
+    <script>
+        const currenttime =document.querySelector("h1");
+        const selectMenu = document.querySelectorAll("select"),
+        setAlermBtn = document.querySelector("button");
+
+        // console.log(selectMenu);
+        for(let i = 12; i > 0; i--){
+            i = i<10 ? "0" + i :i;
+            console.log(i);
+            let option = `<option value ="${i}">${i}</option>`;
+            selectMenu[0].firstElementChild.insertAdjacentHTML("afterend",option);
+        }
+
+        for(let i = 59; i >= 0; i--){
+            i = i<10 ? "0" + i :i;
+            console.log(i);
+            let option = `<option value ="${i}">${i}</option>`;
+            selectMenu[1].firstElementChild.insertAdjacentHTML("afterend",option);
+        }
+
+        for(let i = 2; i > 0; i--){
+          let ampm=i==1? "AM" : "PM"
+            console.log(i);
+            let option = `<option value ="${ampm}">${ampm}</option>`;
+            selectMenu[2].firstElementChild.insertAdjacentHTML("afterend",option);
+        }
+        setInterval(showTime, 1000);
+
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); 
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            mppm ="AM";
+            if(h>=12){
+                h=h-12;
+                ampm="pm";
+            }
+            h = h==0 ? h=12 : h;
+            h = h<10 ? "0" + h :h;
+            m= m <10 ? "0" + m :m;
+            s = s<10 ? "0" + s :s;
+            currenttime.innertext=`${h}: ${m}: ${s} ${ampm}`;
+            
+        }
+        function setAlerm(){
+
+        }
+        setAlermBtn.addEventListener("click",setAlerm);
+
+    </script>
+</body>
+</html> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock with Sound</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #70a1ff;
+            margin: 0;
+        }
+
+        .clock {
+            text-align: center;
+            color: #fff;
+        }
+
+        .time {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .alarm-inputs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .alarm-input {
+            margin: 0 10px;
+        }
+
+        .alarm-button {
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="time" id="time"></div>
+        <div class="alarm-inputs">
+            <input type="number" class="alarm-input" id="hours" placeholder="Hours">
+            <input type="number" class="alarm-input" id="minutes" placeholder="Minutes">
+            <button class="alarm-button" onclick="setAlarm()">Set Alarm</button>
+        </div>
+    </div>
+
+    <!-- Audio element for the alarm sound -->
+    <audio id="alarmSound">
+        <source src="path/to/your/alarm-sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s;
+            document.getElementById("time").innerText = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        function setAlarm() {
+            var hours = document.getElementById("hours").value;
+            var minutes = document.getElementById("minutes").value;
+
+            if (hours !== "" && minutes !== "") {
+                var alarmTime = new Date();
+                alarmTime.setHours(parseInt(hours));
+                alarmTime.setMinutes(parseInt(minutes));
+                alarmTime.setSeconds(0);
+
+                var currentTime = new Date();
+
+                if (alarmTime > currentTime) {
+                    var timeDifference = alarmTime - currentTime;
+                    setTimeout(() => {
+                        alert("Time's up!");
+                        playAlarmSound();
+                    }, timeDifference);
+                } else {
+                    alert("Please set a future time for the alarm.");
+                }
+            } else {
+                alert("Please enter valid hours and minutes");
+            }
+        }
+
+        function playAlarmSound() {
+            var alarmSound = document.getElementById("alarmSound");
+            alarmSound.play();
+        }
+
+        showTime();
+    </script>
+</body>
+</html> -->

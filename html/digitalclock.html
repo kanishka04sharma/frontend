@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
         body {
             font-family: 'Arial', sans-serif;
             display: flex;
@@ -13,18 +12,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
             flex-direction: column;
-        
+        }
+        h1{
+            color:rgb(202, 202, 214);
+        }
+        #sel{
+            margin-bottom: 10px;
         }
 
         .clock {
             display: flex;
             font-size: 3em;
-            background-color: black;
+            background-color:rgb(202, 202, 214);
             color: white;
             padding: 15px;
-
         }
 
         .column {
@@ -35,13 +38,14 @@
         .separator {
             margin: 0 0.5em;
         }
-    
-
-
     </style>
 </head>
 <body>
     <h1>Digital clock</h1>
+    <select name="" id="sel">
+        <option value="sky" id="skyblue">white mode</option>
+        <option value="yellow" id="dark">dark mode</option>
+    </select>
     <div class="clock" id="clock">
         <div class="column" id="hour">00</div>
         <div class="separator">:</div>
@@ -52,23 +56,33 @@
 
     <script>
         setInterval(showTime, 1000);
+
         function showTime() {
             var date = new Date();
             var h = date.getHours(); 
-            document.getElementById("hour").innerHTML=h;
+            document.getElementById("hour").innerHTML = h;
             var m = date.getMinutes();
-            document.getElementById("minutes").innerHTML=m;
+            document.getElementById("minutes").innerHTML = m;
             var s = date.getSeconds();
-            document.getElementById("seconds").innerHTML=s;
-            console.log(h);
-            console.log(m);
-            console.log(s);
-        
-        
-
-            
-
+            document.getElementById("seconds").innerHTML = s;
         }
+
+        // dark/light mode switcher
+        document.getElementById("sel").onchange = function () {
+            var selectedValue = document.getElementById("sel").value;
+
+            if (selectedValue === "sky") {
+                document.body.style.backgroundColor = "#f0f0f0";
+            } else if (selectedValue === "yellow") {
+                document.body.style.backgroundColor = "black";
+            }
+        }
+        
+      
+
+
+ 
+
     </script>
 </body>
 </html>
