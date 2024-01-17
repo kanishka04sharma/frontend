@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -90,5 +90,109 @@
     </div>  
 
 
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: #ededed;
+        }
+
+        .header {
+            background-color: #075e54;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .header i {
+            font-size: 24px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .main {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        .content {
+            width: 70%;
+            background-color: #f0f0f0;
+            overflow-y: scroll;
+        }
+
+        .chat-list {
+            width: 30%;
+            background-color: #075e54;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-list-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .chat-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .chat-list-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .chat-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../img/the.jpg" alt="Profile Image">
+        WhatsApp
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+    <div class="main">
+        <div class="chat-list">
+            <div class="chat-list-item">Contact 1</div>
+            <div class="chat-list-item">Contact 2</div>
+            <!-- Add more chat list items as needed -->
+        </div>
+        <div class="content">
+            <div class="chat-content">
+                <!-- Chat content goes here -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>

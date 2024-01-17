@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" name="" id="inp">
+    <button id="btn">submit</button>
     <script>
         // let x=[10,20,30,40,50,"abhi", true,1.57];
         // for(let i=0;i<x.length;i++){
@@ -17,30 +19,70 @@
         // for(let i of y){
         //     sum+=i;
         // }
-        //     console.log(sum);
+        //     console.log(sum);0
 
 
         // second max
-        let y=[100,52,44,78,96,63];
-        let max=0;
-        for(let i of y){
-         if(max<i) max=i;
+        // let y=[100,52,44,78,96,63];
+        // let max=0;
+        // for(let i of y){
+        //  if(max<i) max=i;
 
-        }
-        // console.log(max);
-        let temp=0;
-        for(let i of y){
-            if(temp<i && i<max)
-            temp=i;
-        }
-        console.log(temp);
+        // }
+        // // console.log(max);
+        // let temp=0;
+        // for(let i of y){
+        //     if(temp<i && i<max)
+        //     temp=i;
+        // }
+        // console.log(temp);
+
+        // first minimum 
+    // let y=[100,52,44,78,96,6];
+    //     let min=Infinity;
+    //     for(let i of y){
+    //      if(i<min) min=i;
+    //     }
+    //     console.log(min);
     
 
-        // 
+    // second min;
+    // let y=[100,52,44,78,96,63];
+    //     let min=Infinity;
+    //     for(let i of y){
+    //      if(i<min) min=i;
+    //     }
+    //     // console.log(min);
+    //     let temp=Infinity;
+    //     for(let i of y){
+    //       if (temp > i && i !== min) {
+    //       temp = i;
+    //       }
+    //     }
+    //       console.log(temp);
 
 
+    let arr = [12, 22, 34, 56, 77, 56];
 
-        
+document.getElementById("btn").onclick = function () {
+    let x = document.getElementById("inp").value;
+    let found = false;
+
+    for (let i of arr) {
+        if (x == i) {
+            found = true;
+            break; 
+        }
+    }
+
+    if (found) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+
+
            
     </script>
 </body>

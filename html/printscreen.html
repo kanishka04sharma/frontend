@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        let y = [10, 20, 30, 40, 50];
+        let b = y.pop();  
+        y.unshift(b);     
+        y.shift(50)     
+        y.push(10);       
+        console.log(y);   
+    </script> 
+    <input type="text" name="" id="inp" placeholder="enter your name">
+    <button id="btn">add array</button>
+    <button id="print">print name</button>
+    <script>
+        setInterval(function(){
+            document.getElementById("btn").onclick=function(){
+                var x =document.getElementById('input').value;
+                console.log(x)
+                
+            }
+        },1000);
+        setInterval(function(){
+            document.getElementById("print").onclick=function(){
+                document.getElementById("print").innerHTML=
+        },1000)
+    
+         
+         
+    </script>
+</body>
+ </html> -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <input type="text" name="" id="inp" placeholder="enter your name">
+     <button id="btn">add name</button>
+     <button id="print">print names</button>
+     <h1></h1>
+ 
+     <script>
+         let names = [];
+ 
+         document.getElementById("btn").onclick = function () {
+             var x = document.getElementById('inp').value; 
+             document.getElementById("inp").value = "";    
+             names.push(x);
+             console.log(names);
+         }
+ 
+         document.getElementById("print").onclick = function() {
+             let count = 0;
+             const intervalId = setInterval(function(){
+                 if (count == names.length) {
+                     clearInterval(intervalId);
+                 } else {
+                     document.querySelector("h1").innerHTML += names[count];
+                     if (count < names.length - 1) {
+                         document.querySelector("h1").innerHTML += ",";
+                     }
+                     console.log(names[count]);
+                     count++;
+                 }
+             }, 1000);
+         }
+     </script>
+ </body>
+ </html>
+ 
+
+
+
+ 
+

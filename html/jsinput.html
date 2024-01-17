@@ -1,0 +1,200 @@
+<!-- <!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button id="submitBtn">Submit</button>
+    <button id="printBtn">Print</button>
+
+
+
+    <script>
+        let even = [];
+        let odd = [];
+
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click', function() {
+            let inputValue = document.querySelector("input").value="";
+            console.log(inputValue);
+
+                if (inputValue % 2 == 0) {
+                    even.push(inputValue);
+                } else {
+                    odd.push(inputValue);
+                }
+            
+        })
+
+        let printBtn = document.getElementById("printBtn");
+        printBtn.addEventListener('click', function() {
+            console.log("Even Numbers: ", even);
+            console.log("Odd Numbers: ", odd);
+        })
+        document.getElementById("odd").addEventListener('click',function(){
+            odd.pop();
+            console.log(odd);
+        })
+        document.getElementById("even").addEventListener('click',function(){
+            even.pop()
+            console.log(even);
+        })
+
+        document.getElementById("even").addEventListener('click',function(){
+            even.shift();
+            consoel.log(shift);
+
+
+            
+        })
+        document.getElementById("odd").addEventListener('clcik',function(){
+            odd.unshift();
+            console.log(unshift);
+        })
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button id="submitBtn">Submit</button>
+    <button id="printBtn">Print</button>
+    <button id="push">push</button>
+    <button id="pop">pop</button>
+    <button id="shift">shift</button>
+    <button id="unshift">unshift</button>
+
+    <script>
+        let even = [];
+        let odd = [];
+
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click', function() {
+            let inputValue = parseInt(document.querySelector("input").value);
+            console.log(inputValue);
+
+                if (inputValue % 2 == 0) {
+                    even.push(inputValue);
+
+                } else {
+                    odd.push(inputValue);
+                }
+        });
+
+        let printBtn = document.getElementById("printBtn");
+        printBtn.addEventListener('click', function() {
+            console.log("Even Numbers: ", even);
+            console.log("Odd Numbers: ", odd);
+        });
+        document.getElementById("push").addEventListener('click',function(){
+            even.push();
+            odd.push();
+            console.log(even);
+            console.log(odd);
+        })
+
+        document.getElementById("pop").addEventListener('click',function(){
+            even.pop();
+            odd.pop();
+            console.log(even);
+            console.log(odd);
+        })
+
+
+        document.getElementById("shift").addEventListener('click',function(){
+            even.shift();
+            odd.shift();
+            console.log(even);
+            console.log(odd);
+        })
+        document.getElementById("unshift").addEventListener('click',function(){
+            even.unshift();
+            odd.unshift();
+            console.log(even);
+            console.log(odd);
+            
+        })
+
+
+
+
+
+    </script>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button id="submitBtn">Submit</button>
+    <button id="printBtn">Print</button>
+    <button id="push">Push</button>
+    <button id="pop">Pop</button>
+    <button id="shift">Shift</button>
+    <button id="unshift">Unshift</button>
+
+    <script>
+        let even = [];
+        let odd = [];
+
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click', function() {
+            let inputValue = parseInt(document.querySelector("input").value);
+
+            if (inputValue % 2 === 0) {
+                even.push(inputValue);
+            } else {
+                odd.push(inputValue);
+            }
+        });
+
+        let printBtn = document.getElementById("printBtn");
+        printBtn.addEventListener('click', function() {
+            console.log("Even Numbers: ", even);
+            console.log("Odd Numbers: ", odd);
+        });
+
+        document.getElementById("push").addEventListener('click', function(){
+            even.push(1);  
+            odd.push(1);   
+            console.log("Pushed: ", even, odd);
+        });
+
+        document.getElementById("pop").addEventListener('click', function(){
+            even.pop();
+            odd.pop();
+            console.log("Popped: ", even, odd);
+        });
+
+        document.getElementById("shift").addEventListener('click', function(){
+            even.shift();
+            odd.shift();
+            console.log("Shifted: ", even, odd);
+        });
+
+        document.getElementById("unshift").addEventListener('click', function(){
+            even.unshift(1); 
+            odd.unshift(1);   
+            console.log("Unshifted: ", even, odd);
+        });
+    </script>
+</body>
+</html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -84,5 +84,93 @@
                 </div>
         </div>
     </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+        
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            border: none;
+            background: none;
+            color: white;
+        }
+
+        .prev {
+            left: 10px;
+            padding: 20px;
+            background-color:white;
+        }
+
+        .next {
+            right: 10px;
+            background-color:white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-item"><img src="../img/mountain-1.jpg" alt="Image 1" style="height: 100vh; width: 100%;"></div>
+        <div class="carousel-item"><img src="../img/mountain-2.jpg" alt="Image 2" style="height: 100vh; width: 100%;"></div>
+        <div class="carousel-item"><img src="../img/mountain-4.jpg" alt="Image 3" style="height: 100vh; width: 100%;"></div>
+        <div class="carousel-item"><img src="../img/mountain-5.jpg" alt="Image 4" style="height: 100vh; width: 100%;"></div>
+        <div class="carousel-item"><img src="../img/mountain.jpg" alt="Image 5" style="height: 100vh; width: 100%;"></div>
+    </div>
+    <button class="prev" onclick="prevSlide()"></button>
+    <button class="next" onclick="nextSlide()"></button>
+
+    <script>
+        let currentIndex = 0;
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + 5) % 5;
+            updateCarousel();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % 5;
+            updateCarousel();
+        }
+    function updateCarousel() {
+            const carousel = document.querySelector('.carousel');
+            const newTransformValue = -currentIndex * 100 + '%';
+            carousel.style.transform = 'translateX(' + newTransformValue + ')';
+        }
+    
+    </script>
+</div>
+
 </body>
 </html>
