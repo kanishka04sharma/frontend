@@ -1,253 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-     *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        .container{
-            background-color: white;
-            padding: 15px;
-        }
-        .header{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .header-1 ul li{
-            list-style: none;
-            float: left;
-            margin-right: 20px;
-            font-size: 15px;
-            font-family: 'Times New Roman', Times, serif;
-          
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 
-        }
-        .header-1 ul li :hover{
-          color: #71cd14;
-        }
-      
-       
+  .container {
+    background-color: white;
+    padding: 15px;
+  }
 
-        ul li a {
-            text-decoration: none;
-            color: black;
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-        }
-        #change{
-          color: #71cd14;
-        }
-        .header-3{
-            display: flex;
-            
-        }
-        .header-3 i{
-            margin: 20px;
-        }
-       
-        .collection{
-            background-image: url("../img/banner-bg.jpg");
-            height:800px;
-            background-position:center;
-        }
-        .collection-1{
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+  .header-1 ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 
-        }
-        .collection-2{
-            position: relative;
-            width: 100%;
-            min-height: 1px;
-            padding-right: 15px;
-           padding-left: 15px;
-           
-        }
-        .collection-3{
-            position: absolute;
-            margin-top: 22%;
-            margin-left: 50px;
-            
-        }
-        .first{
-            text-transform: uppercase;
-            color: white;
-            
-            
 
-        }
-        .second h3{
-            font-size: 50px;
-            color: white;
+  }
 
-        }
-        .second span{
-            color: #71cd14;
-            
-        
-        }
-        .second p{
-            color: white;
-            font-size: 20px;
-            margin-bottom: 40px;
-            
-            
-        
-        }
-    .main_btn{
-    display: inline-block;
-    background: #71cd14;
-    padding: 0px 32px;
-    letter-spacing: 0.25px;
-    color: #fff;
-    font-family: "Roboto",sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 44px; 
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
+  .header-1 ul li :hover {
+    color: #71cd14;
+  }
+
+
+
+  ul li a {
     text-decoration: none;
-    }
-    .section{
-        padding-top: 30px
-    }
-    .container-1{
+    color: black;
+
+  }
+
+  #change {
+    color: #71cd14;
+  }
+
+  .header-3 {
+    display: flex;
+
+  }
+
+  .header-3 i {
+    margin: 20px;
+  }
+
+  .collection {
+    background-image: url("../img/banner-bg.jpg");
+    height: 800px;
+    background-position: center;
+  }
+
+  .collection-1 {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    }
-    .row {
+
+  }
+
+  .collection-2 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+  .collection-3 {
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 50px;
+
+  }
+
+  .first {
+    text-transform: uppercase;
+    color: white;
+
+
+
+  }
+
+  .second h3 {
+    font-size: 50px;
+    color: white;
+
+  }
+
+  .second span {
+    color: #71cd14;
+
+
+  }
+
+  .second p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+
+
+  }
+
+  .main_btn {
+    display: inline-block;
+    background: #71cd14;
+    padding: 0px 32px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .section {
+    padding-top: 30px
+  }
+
+  .container-1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
- .single-feature{
+  }
+
+  .single-feature {
     padding: 30px 15px;
     text-align: center;
     border: 1px solid #eff2f3;
     margin-bottom: 50px;
-}  
-.single-feature a{
+  }
+
+  .single-feature a {
     text-decoration: none;
     color: black;
     margin-top: 10px;
-    
-}
-.single-feature p{
-    margin-top: 10px;
-    color:darkgray
-}
-.product{
-    margin-bottom:40px;
-}
 
-.fea-1{
+  }
+
+  .single-feature p {
+    margin-top: 10px;
+    color: darkgray
+  }
+
+  .product {
+    margin-bottom: 40px;
+  }
+
+  .fea-1 {
     text-align: center;
     margin-top: 40px;
   }
-  .fea-1 h2{
+
+  .fea-1 h2 {
     font-weight: 900;
     text-transform: uppercase;
-   } 
-  .fea-1 p{
+  }
+
+  .fea-1 p {
     margin-top: 30px;
+    font-size: 17px;
 
   }
+
   /* .alfir{
     border: 1px solid black;
   } */
-  .allfea{
+  .allfea {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
 
   }
-  .fea-2{
+
+  .fea-2 {
     height: 80%;
   }
-  .fea-2 img{
+
+  .fea-2 img {
     height: 100%;
     width: 100%;
   }
-  .fea-3{
-    height: 20%;
-    border: 1px solid #eff2f3;
-    
+
+  .icons {
+    width: 90%;
+    padding: 7px 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(113, 205, 20, 0.4);
+    transition: all 400ms ease;
+  }
+
+  .icons a {
+    display: inline-block;
+    height: 36px;
+    line-height: 40px;
+    width: 36px;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    color: #2a2a2a;
+    margin-right: 25px;
   }
 
 
-.fea-3 h4{
- 
-  margin-left: 20px;
-  margin-top: 25px;
-  
-}
-  .fea-3 p{
-  margin-left: 20px;
-  font-size: 22px;
-  font-weight: 700;
+
+
+  .fea-3 {
+    height: 20%;
+    border: 1px solid #eff2f3;
+
+  }
+
+
+  .fea-3 h4 {
+
+    margin-left: 20px;
+    margin-top: 25px;
+
+  }
+
+  .fea-3 p {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
 
 
 
-}
-.fea-3 span{
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: 100;
-}
-.offer{
-     background-image: url("../img/offer-bg.png"); 
-     height:100vh;
-     width: 100%;
-     background-position: center;
-     background-repeat: no-repeat; 
+  }
+
+  .fea-3 span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .offer {
+    background-image: url("../img/offer-bg.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
-    }
-    .offer-1{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 40%;
-        margin-top: 20px;
+  }
 
-     }
-     .offer-1 h3{
-        text-transform:uppercase;
-        font-size: 20px;
-        margin-top: 20%;
-     }
-     .offer-1 h2{
-        font-size: 50px;
-        font-weight:800;
-        text-transform: uppercase;
-        margin-top: 20px;
-     }
-     .main_btn {
-     display: inline-block; 
+  .offer-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 20px;
+
+  }
+
+  .offer-1 h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20%;
+  }
+
+  .offer-1 h2 {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+
+  .main_btn {
+    display: inline-block;
     margin-top: 20px;
     background: #71cd14;
     padding: 10px;
     letter-spacing: 0.25px;
     color: #fff;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -255,259 +320,287 @@
     text-transform: uppercase;
     border-radius: 10px;
     margin-bottom: 10px;
-}
+  }
 
 
-/* sisth */
+  /* sisth */
 
-/* seventh */
-.pro-1{
+  /* seventh */
+  .pro-1 {
     text-align: center;
     margin-top: 40px;
   }
-  .pro-1 h2{
+
+  .pro-1 h2 {
     font-weight: 900;
     text-transform: uppercase;
-   } 
-  .pro-1 p{
+  }
+
+  .pro-1 p {
     margin-top: 30px;
 
   }
+
   /* .alfir{
     border: 1px solid black;
   } */
-  .allpro{
+  .allpro {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
   }
 
-  .pro-2{
+  .pro-2 {
 
     height: 80%;
   }
 
-  .pro-2 img{
+  .pro-2 img {
 
     height: 100%;
   }
-  .pro-3{
-    border: 1px solid #eff2f3;;;
+
+  .pro-3 {
+    border: 1px solid #eff2f3;
+    ;
+    ;
     height: 20%;
   }
-.pro-3 h4{
-  margin-top: 10px;
-  margin-left: 20px;
-  
-}
-  .pro-3 p{
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 22px;
-  font-weight: 700;
+
+  .pro-3 h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+
+  }
+
+  .pro-3 p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
 
 
-}
-.pro-3 span{
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: 100;
-}
-.secpro{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 60px;
-}
-.late-1{
+  }
+
+  .pro-3 span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .secpro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .late-1 {
     text-align: center;
     margin-top: 60px;
   }
-  .late-1 h2{
+
+  .late-1 h2 {
     font-weight: 900;
     text-transform: uppercase;
     /* text-decoration: underline;  */
-   } 
-  .late-1 p{
+  }
+
+  .late-1 p {
     margin-top: 30px;
 
   }
-  .comment-12{
-     display: flex;
-    justify-content:space-evenly;
+
+  .comment-12 {
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-     margin-top: 40px;
+    margin-top: 40px;
   }
- .admin{
-  margin-top: 30px;
- }
- .admin p{
-  text-transform: capitalize;
-  color: gray;
-  
 
- }
- .admin span{
-  margin-left: 20px;
- }
-.user{
-  margin-top: 30px;
-}
-.user p{
-  margin-top: 20px;
+  .admin {
+    margin-top: 30px;
+  }
 
-}
-.learn{
-  margin-top: 20px;
-}
-.learn i{
-  margin-left: 20px;
-}
-
-.footer{
-             background-color: black; 
-            margin-top: 70px;
+  .admin p {
+    text-transform: capitalize;
+    color: gray;
 
 
-        }
-        .container-123{
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            
-            
+  }
 
-        }
-        .coll{
-            margin-top: 80px;
-            margin-bottom: 60px;
-            
-        }
-        .coll h4{
-            margin: 30px;
-            color: white;
-            font-size: 20px;
-        }
-        .coll ul li {
-            list-style:none;
-            margin: 10px;
-            color: white;
-            
-            
-        
-        }
-        .coll ul li a{
-            text-decoration: none;
-            font-size: 15px;
-            color:white;
-            
-        }
-        .footer-bottom{
-            display: flex;
-            justify-content: space-evenly;
-            
-        
-        }
-        .bottom-1{
-          color: white;
-        }
-        .footer-social a {
-            margin: 10px;     
-        }
+  .admin span {
+    margin-left: 20px;
+  }
+
+  .user {
+    margin-top: 30px;
+  }
+
+  .user p {
+    margin-top: 20px;
+
+  }
+
+  .learn {
+    margin-top: 20px;
+  }
+
+  .learn i {
+    margin-left: 20px;
+  }
+
+  .footer {
+    background-color: black;
+    margin-top: 70px;
 
 
+  }
+
+  .container-123 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+
+  }
+
+  .coll {
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+  }
+
+  .coll h4 {
+    margin: 30px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .coll ul li {
+    list-style: none;
+    margin: 10px;
+    color: white;
+
+
+
+  }
+
+  .coll ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-evenly;
+
+
+  }
+
+  .bottom-1 {
+    color: white;
+  }
+
+  .footer-social a {
+    margin: 10px;
+  }
 </style>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div>
-                <img src="../img/logo.png" alt="">
-            </div>
-            <div class="header-1">
-                <ul>
-                    <li><a href="#" id="change">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+  <div class="container">
+    <div class="header">
+      <div>
+        <img src="../img/eiser.png" alt="">
+      </div>
+      <div class="header-1">
+        <ul>
+          <li><a href="#" id="change">HOME</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">CONTACT</a></li>
 
-                </ul>
-            </div>
-            <div class="header-3">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-regular fa-user"></i></div>
-                <div><i class="fa-regular fa-heart"></i></div>
-            </div>
+        </ul>
+      </div>
+      <div class="header-3">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- second part -->
+  <div class="collection">
+    <div class="collection-1">
+      <div class="collection-2">
+        <div class="collection-3">
+          <div class="first">
+            <p>men collection</p>
+          </div>
+          <div class="second">
+            <h3><span>Show</span> Your<br>
+              Personal <span>Style</span></h3>
+            <p>Fowl saw dry which a above together place.</p>
+            <a class="main_btn" href="#">View Collection</a>
+
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- second part -->
-    <div class="collection">
-        <div class="collection-1">
-            <div class="collection-2">
-                <div class="collection-3">
-                  <div class="first">
-                    <p>men collection</p>
-                  </div>
-                <div class="second">
-                    <h3><span>Show</span> Your<br>
-                        Personal <span>Style</span></h3>
-                        <p>Fowl saw dry which a above together place.</p>
-                        <a class="main_btn" href="#">View Collection</a>
+  </div>
 
-                </div>
-                </div>
-            </div>
+  <!--third part-->
+  <section class="section">
+    <div class="container-1">
+      <div class="row">
+        <div class="row-1">
+          <div class="single-feature">
+            <a href="#" class="title">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <h3>Money back gurantee</h3>
+            </a>
+            <p>Shall open divide a one</p>
+          </div>
         </div>
-        
-    </div>
 
-    <!--third part-->
-    <section class="section">
-        <div class="container-1">
-          <div class="row">
-            <div class="row-1">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                  <h3>Money back gurantee</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-truck"></i>
-                  <h3>Free Delivery</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-headphones"></i>
-                  <h3>Alway support</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3 col-md-6">
-              <div class="single-feature">
-                <a href="#" class="title">
-                    <i class="fa-solid fa-headphones"></i>
-                  <h3>Secure payment</h3>
-                </a>
-                <p>Shall open divide a one</p>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-feature">
+            <a href="#" class="title">
+              <i class="fa-solid fa-truck"></i>
+              <h3>Free Delivery</h3>
+            </a>
+            <p>Shall open divide a one</p>
+          </div>
         </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="single-feature">
+            <a href="#" class="title">
+              <i class="fa-solid fa-headphones"></i>
+              <h3>Alway support</h3>
+            </a>
+            <p>Shall open divide a one</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="single-feature">
+            <a href="#" class="title">
+              <i class="fa-solid fa-headphones"></i>
+              <h3>Secure payment</h3>
+            </a>
+            <p>Shall open divide a one</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -522,24 +615,29 @@
       </div>
       <!-- product -->
       <div class="allfea">
-          <div class="alfea">
-              <div class="fea-2">
-                <img src="../img/f-p-1.jpg" alt="">
-              </div>
-              <div class="fea-3">
-                <h4>LATEST MEN’S SNEAKER</h4>
-                <p>$25.00 <span><del>$35.00</del></span></p>
-              </div>
+        <div class="alfea">
+          <div class="fea-2">
+            <img src="../img/f-p-1.jpg" alt="">
+            <div class="icons">
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
           </div>
+          <div class="fea-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
+        </div>
 
-          <div class="alfea">
-            <div class="fea-2">
-              <img src="../img/f-p-2.jpg" alt="">
-            </div>
-            <div class="fea-3">
-              <h4>RED WOMEN PURSES</h4>
-              <p>$25.00 <span><del>$35.00</del></span></p>
-            </div>
+        <div class="alfea">
+          <div class="fea-2">
+            <img src="../img/f-p-2.jpg" alt="">
+          </div>
+          <div class="fea-3">
+            <h4>RED WOMEN PURSES</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
         </div>
 
 
@@ -551,11 +649,11 @@
             <h4>MEN STYLIST SMART WATCH</h4>
             <p>$25.00 <span><del>$35.00</del></span></p>
           </div>
+        </div>
+
+
+
       </div>
-
-
-          
-       </div>
 
     </div>
   </div>
@@ -563,18 +661,18 @@
   <!--fifth  -->
   <div class="offer">
     <div class="offer-1">
-        <h3>all men’s collection</h3>
-        <h2>50% off</h2>
-        <a href="#" class="main_btn">Discover Now</a>
-        <p>Limited Time Offer</p>
+      <h3>all men’s collection</h3>
+      <h2>50% off</h2>
+      <a href="#" class="main_btn">Discover Now</a>
+      <p>Limited Time Offer</p>
     </div>
 
-</div>
+  </div>
 
-<!-- sixth -->
+  <!-- sixth -->
 
-<!-- seventh -->
-<div class="inspired">
+  <!-- seventh -->
+  <div class="inspired">
     <div class="inspired-1">
       <div class="pro-1">
         <h2><span>INSPIRED PRODUCTS</span>
@@ -584,24 +682,24 @@
       </div>
       <!-- product -->
       <div class="allpro">
-          <div class="alfir">
-              <div class="pro-2">
-                <img src="../img/i1.jpg" alt="">
-              </div>
-              <div class="pro-3" >
-                <h4>LATEST MEN’S SNEAKER</h4>
-                <p>$25.00 <span><del>$35.00</del></span></p>
-              </div>
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i1.jpg" alt="">
           </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
+        </div>
 
-          <div class="alfir">
-            <div class="pro-2">
-              <img src="../img/i2.jpg" alt="">
-            </div>
-            <div class="pro-3">
-              <h4>LATEST MEN’S SNEAKER</h4>
-              <p>$25.00 <span><del>$35.00</del></span></p>
-            </div>
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i2.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
         </div>
 
         <div class="alfir">
@@ -612,60 +710,60 @@
             <h4>LATEST MEN’S SNEAKER</h4>
             <p>$25.00 <span><del>$35.00</del></span></p>
           </div>
+        </div>
+
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i4.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
+        </div>
       </div>
 
-      <div class="alfir">
-        <div class="pro-2">
-          <img src="../img/i4.jpg" alt="">
+      <div class="secpro">
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i5.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
         </div>
-        <div class="pro-3">
-          <h4>LATEST MEN’S SNEAKER</h4>
-          <p>$25.00 <span><del>$35.00</del></span></p>
-        </div>
-     </div>
-    </div>
 
-    <div class="secpro">
-      <div class="alfir">
-        <div class="pro-2">
-          <img src="../img/i5.jpg" alt="">
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i6.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
         </div>
-        <div class="pro-3">
-          <h4>LATEST MEN’S SNEAKER</h4>
-          <p>$25.00 <span><del>$35.00</del></span></p>
-        </div>
-    </div>
 
-    <div class="alfir">
-      <div class="pro-2">
-        <img src="../img/i6.jpg" alt="">
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i7.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
+        </div>
+
+        <div class="alfir">
+          <div class="pro-2">
+            <img src="../img/i8.jpg" alt="">
+          </div>
+          <div class="pro-3">
+            <h4>LATEST MEN’S SNEAKER</h4>
+            <p>$25.00 <span><del>$35.00</del></span></p>
+          </div>
+        </div>
       </div>
-      <div class="pro-3">
-        <h4>LATEST MEN’S SNEAKER</h4>
-        <p>$25.00 <span><del>$35.00</del></span></p>
-      </div>
-  </div>
-
-  <div class="alfir">
-    <div class="pro-2">
-      <img src="../img/i7.jpg" alt="">
-    </div>
-    <div class="pro-3">
-      <h4>LATEST MEN’S SNEAKER</h4>
-      <p>$25.00 <span><del>$35.00</del></span></p>
-    </div>
-</div>
-
-<div class="alfir">
-  <div class="pro-2">
-    <img src="../img/i8.jpg" alt="">
-  </div>
-  <div class="pro-3">
-    <h4>LATEST MEN’S SNEAKER</h4>
-    <p>$25.00 <span><del>$35.00</del></span></p>
-  </div>
-</div>
-</div>
 
     </div>
   </div>
@@ -686,44 +784,47 @@
         <div class="firstcom-img">
           <img src="../img/b1.jpg" alt="">
         </div>
-       <div class="admin">
-         <p>by  admin <span><i class="fa-regular fa-face-smile"></i> comments</span></p>
-       </div>
-       <div class="user">
-         <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
-         <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
-       </div>
-       <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
+        <div class="admin">
+          <p>by admin <span><i class="fa-regular fa-face-smile"></i> comments</span></p>
+        </div>
+        <div class="user">
+          <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+          <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.
+          </p>
+        </div>
+        <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
       </div>
-     <div class="firstcom-1">
+      <div class="firstcom-1">
         <div class="firstcom-img">
-           <img src="../img/b2.jpg" alt="">
+          <img src="../img/b2.jpg" alt="">
         </div>
-       <div class="admin">
-           <p>by  admin <span><i class="fa-regular fa-face-smile"></i> comments</span></p>
+        <div class="admin">
+          <p>by admin <span><i class="fa-regular fa-face-smile"></i> comments</span></p>
         </div>
-       <div class="user">
-         <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
-         <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
+        <div class="user">
+          <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+          <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.
+          </p>
         </div>
-       <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
+        <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
       </div>
-     <div class="firstcom-1">
-      <div class="firstcom-img">
-      <img src="../img/b3.jpg" alt="">
+      <div class="firstcom-1">
+        <div class="firstcom-img">
+          <img src="../img/b3.jpg" alt="">
+        </div>
+        <div class="admin">
+          <p>by admin <span><i class="fa-regular fa-face-smile"></i> comments</span></p>
+        </div>
+        <div class="user">
+          <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
+          <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.
+          </p>
+        </div>
+        <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
       </div>
-     <div class="admin">
-      <p>by  admin <span><i class="fa-regular fa-face-smile"></i>  comments</span></p>
-     </div>
-     <div class="user">
-       <h3>Ford clever bed stops your sleeping<br> partner hogging the whole</h3>
-        <p>Let one fifth i bring fly to divided face for bearing the<br> divide unto seed winged divided light Forth.</p>
-      </div>
-     <div class="learn">learn more <i class="fa-solid fa-arrow-right"></i></div>
     </div>
-</div>
-<footer class="footer">
-    <div class="container-123">
+    <footer class="footer">
+      <div class="container-123">
         <div class="coll">
           <h4>Top Products</h4>
           <ul>
@@ -764,29 +865,30 @@
           <h4>Newsletter</h4>
           <p>You can trust us. we only send promo offers,</p>
           <div class="form">
-              <input type="email"placeholder="enter your email address">
-              <button>subscribe</button>
+            <input type="email" placeholder="enter your email address">
+            <button>subscribe</button>
             </form>
           </div>
         </div>
-    </div>
-    <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
         <div class="bottom-1">
-          <p>Copyright © 2023 All rights reserved | This template is made with 
-          <i class="fa-regular fa-heart"></i> by <a href="https://colorlib.com" 
-           target="_blank">Colorlib</a></p>
-       </div>
+          <p>Copyright © 2023 All rights reserved | This template is made with
+            <i class="fa-regular fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
         <div class="footer-social">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a href="#"><i class="fa-brands fa-behance"></i></a>
         </div>
-    </div>
+      </div>
 
-</footer>
+    </footer>
 
 
 
 </body>
+
 </html>

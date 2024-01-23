@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput">
+        <button id="click">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+
+    <script>
+        document.getElementById("click").onclick = function () {
+            let task = document.querySelector("#taskInput").value;
+            document.getElementById("taskList").innerHTML += `<div class="container">
+                   <li>${task}</li>
+                   <button class="complete">complete</button>
+                   <button class="delete">Delete</button>
+                    </div>`;
+            let z = document.querySelectorAll(".container");
+            console.log(z)
+
+            // complete button functionality
+            let c = document.getElementsByClassName('complete');
+            let d = document.querySelectorAll("li");
+            for (let i = 0; i < c.length; i++) {
+                c[i].onclick = function () {
+                    d[i].style.cssText = "text-decoration: line-through";
+                    console.log(d[i]);
+                }
+
+            }
+
+            let del = document.getElementsByClassName('delete');
+            let f = document.querySelectorAll("li");
+            for (let i = 0; i < del.length; i++) {
+                del[i].onclick = function () {
+                    z[i].remove();
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
