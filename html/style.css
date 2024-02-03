@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.line {
+    position: relative;
+    font-size: 15px;
+    color: #fb5849;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.line:before {
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: #fb5849;
+}
+
+
+.h4_font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+}
+
+.h6_font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+#resver_btn {
+    height: 3em;
+    width: 13em;
+    font-size: 15px;
+    font-weight: 600;
+    color: tomato;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#box-2 {
+    width: 60%;
+}
+
+.bar {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .bar {
+        display: block;
+        position: relative;
+        right: -90%;
+        font-size: 25px;
+    }
+
+    #box-2 ul {
+        display: none;
+    }
+}
+
+.carousel {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#slider-1 {
+    background: url('../img/cafe.jpg');
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-2 {
+    width: 68%;
+}
+
+#slider-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:900px) {
+    .carousel {
+        display: block;
+        width: 100vw;
+
+    }
+
+    #slider-1 {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+    #slider-2 {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+}
+
+#about {
+    display: flex;
+    margin: 100px 10%;
+}
+
+.about_left {
+    width: 50%;
+    height: 100%;
+}
+
+.img_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_row img {
+    width: 30%;
+}
+
+.about_right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_right img {
+    width: 85%;
+}
+
+@media (max-width:900px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_left {
+        width: 100%;
+        padding: 8%;
+    }
+
+    .about_right {
+        width: 100%;
+    }
+}
+
+.foods {
+    display: flex;
+    margin: 3% 9%;
+}
+
+.menu_heading {
+    margin: 2% 10%;
+}
+
+.menu_imgs {
+    margin: 0 10px;
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.menu_imgs h6 {
+    background-color: tomato;
+    border-radius: 4px;
+    height: 13%;
+    width: 30%;
+    ;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+}
+
+.menu_imgs img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.info {
+    position: relative;
+    background-color: tomato;
+    border-radius: 5px;
+
+}
+
+.menu_imgs:hover .info {
+    transform: translateY(-80%);
+    transition: all 1s ease-out;
+    display: block;
+}
+
+@media (max-width:400px) {
+    .foods {
+        display: block;
+        margin: 2% 9%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .menu_imgs {
+        background-color: blue;
+        margin: 0 10px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 5% 0;
+    }
+
+    .menu_imgs img {
+        width: 100%;
+    }
+}
+
+#our_chefs {
+    margin: 5% 5%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.chefs {
+    border: 2px solid gray;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    #our_chefs {
+        margin: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        width: 80vw;
+    }
+
+    .chefs>img {
+        width: 100%;
+    }
+
+    .chefs {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: blanchedalmond;
+    }
+}
+
+.reservation_form {
+            background-image: url("../img/reservation-bg.jpg");
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+#box_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6%;
+    width: 50%;
+    color: white;
+}
+
+#down {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#box_2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 5%;
+    height: 100%;
+}
+
+#box_2>form>input {
+    height: 2em;
+    width: 42em;
+}
+
+.phone {
+    background-color: white;
+    border-radius: 8px;
+    width: 45%;
+    height: 120%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: black;
+    top: 0;
+    left: 0;
+}
+
+.phone a {
+    color: black;
+}
+
+.phone>div {
+    background-color: tomato;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+}
+
+.phone>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone i {
+    font-size: 25px;
+}
+
+.in_box {
+    background-color: white;
+    height: 100%;
+    width: 110%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#box_2>form>div {
+    display: flex;
+    justify-content: center;
+}
+
+#first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#first input {
+    height: 50%;
+    width: 49%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    padding-left: 5%;
+    font-size: 18px;
+}
+
+#first input::placeholder {
+    padding-left: 30px;
+    outline: none;
+    border: none;
+}
+
+#first select::placeholder {}
+
+#first select {
+    padding-left: 30px;
+    appearance: none;
+    height: 50%;
+    width: 49%;
+    border-radius: 5px;
+    outline: none;
+    color: grey;
+}
+
+#second {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5%;
+}
+
+.btn_2 {
+    height: 25%;
+    background-color: tomato;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (max-width:1000px) {
+    .reservation_form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        overflow: hidden;
+        object-fit: cover;
+        height: auto;
+    }
+
+    #box_1 {
+        width: 100%;
+        position: relative;
+        top: 40%;
+    }
+
+    #first {
+        padding-bottom: 0;
+
+    }
+
+    #down {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .phone>div {
+        left: 45%;
+    }
+
+    #box_2 {
+        width: 90%;
+    }
+
+    #first input {
+        height: 50px;
+        width: 80%;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid gray;
+    }
+
+    textarea {
+        border-radius: 5px;
+    }
+
+    textarea::placeholder {
+        padding-left: 5%;
+        font-size: 18px;
+    }
+
+    #first input::placeholder {
+        padding-left: 30px;
+        outline: none;
+        border: none;
+    }
+
+    #first select::placeholder {}
+
+    #first select {
+        padding-left: 30px;
+        appearance: none;
+        height: 50px;
+        width: 80%;
+        border-radius: 5px;
+        outline: none;
+        color: grey;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width:650px) {
+    #second {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .btn {
+        font-size: 10px;
+
+    }
+}
+
+.week {
+    text-align: center;
+    margin: 10%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#foodlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin: 0 5%;
+    margin-bottom: 10%;
+}
+
+.f_itms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.price {
+    background-color: tomato;
+    border-radius: 4px;
+    width: 18%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    padding: 0 5%;
+}
+
+@media (max-width:1000px) {
+    #foodlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+        margin: 0 5%;
+    }
+
+    .price {
+        width: 20%;
+        height: 70px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    background-color: tomato;
+    height: 23vh;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.footer ul li:hover i {
+    color: black;
+}
+
+.footer ul i {
+    font-size: 20px;
+    color: tomato;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#itm_3 {
+    color: #fff;
+}
+
+#itm_3 p {
+    text-align: right;
+}
+
+@media (max-width:900px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 4%;
+        gap: 10px;
+        background-color: tomato;
+        height: 50vh;
+    }
+
+    #itm_3 p {
+        text-align: center;
+    }
+
+    .footer ul li::hover i {
+        color: black;
+    }
+}
+
+/*******************/
+.chef-item {
+    margin-bottom: 30px;
+}
+
+
+
+.section-heading {
+    margin-bottom: 70px;
+}
+
+.section-heading h6 {
+    padding-left: 0px;
+}
+
+.section-heading h6:before {
+    display: none;
+}
+
+.chef-item {
+    text-align: center;
+    border: 1px solid #afafaf;
+    padding: 5px;
+    transition: all .5s;
+    border-radius: 3px;
+}
+
+.chef-item:hover {
+    border-color: #fb5849;
+}
+
+.chef-item:hover .down-content h4 {
+    color: #fb5849;
+}
+
+.chef-item .thumb {
+    position: relative;
+}
+
+.chef-item .thumb img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.chef-item .thumb .overlay {
+    position: absolute;
+    background-color: #2a2a2a;
+    border-radius: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.chef-item .thumb ul.social-icons {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.chef-item .thumb ul.social-icons li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.chef-item .thumb ul.social-icons li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.chef-item .thumb ul.social-icons li a:hover {
+    background-color: #fb5849;
+}
+
+.chef-item:hover .overlay {
+    opacity: .9;
+    visibility: visible;
+}
+
+.chef-item:hover ul.social-icons {
+    opacity: 1;
+    visibility: visible;
+}
+
+.chef-item .down-content {
+    padding: 20px 0px;
+}
+
+.chef-item .down-content h4 {
+    transition: all .3s;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.chef-item .down-content span {
+    font-size: 14px;
+    color: #2a2a2a;
+}

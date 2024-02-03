@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function output(a, b, sum) {
+        //     sum(a, b);
+
+        // }
+        // function sum(x, y) {
+        //     console.log(x + y);
+        // }
+        // output(10, 20, sum);
+
+
+
+        // let prom=new Promise((resolve,reject)=>{
+
+        // })
+
+        // set time out function
+
+        // console.log("monday");
+        // console.log("tuesday");
+        // console.log("wednesday");
+        // setTimeout(()=>{
+        //     console.log("thursday");
+
+        // },2000)
+        // console.log("friday");
+        // console.log("saturday");
+
+
+        // function outer() {
+        //     let a = "kanishka";
+        //     function inner() {
+        //         console.log(a);
+        //     }
+        //     return inner;
+        // }
+        // let ans=outer();
+        // ans();
+
+
+        // function output(i) {
+
+        //     i()
+        //     // console.log(i);
+
+        // }
+
+        // function index() {
+
+        //     console.log("Hello Java Script")
+        // }
+
+        // output(() => {
+        //     console.log("Hello Java Script")
+        // })
+
+
+        // function party(dishes, order) {
+        //     setTimeout(() => {
+        //         console.log(dishes)
+        //         if (order) {
+        //             order()
+        //         }
+        //     }, 4000)
+        // }
+        // party("pizza");
+        // party("burger");
+        // party("pattes");
+        // party("pizza", () => {
+        //     console.log('I want to eat');
+        //     party("burger", () => {
+        //         console.log('I want to eat too');
+        //         party("pattes", () => {
+        //             console.log('No more food');
+        //         })
+        //     })
+        // })
+
+        // let prom = new Promise((resolve, reject) => {
+
+        //     if (false) {
+
+        //         resolve("Data")
+        //     }
+
+        //     else {
+
+        //         reject("error")
+        //     }
+
+
+        // })
+        // prom.then((result) => {
+        //     console.log("result")
+        // }).catch((error) => {
+        //     console.log("Error");
+
+
+        // })
+
+        let a = fetch("https://dummyjson.com/products")
+            // console.log(a);
+            .then((r) => {
+                // console.log(r.json());
+                r.json().then((e) => {
+                    console.log(e.products[0]);
+                })
+            })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
